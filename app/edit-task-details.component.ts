@@ -12,11 +12,19 @@ import {Task} from './task.model';
     </div>
     <div class="container">
       <h4> Edit Priority: {{ task.priority}}</h4>
-      <select [(ngModel)]="task.priority">
+      <select class="input-lg" [(ngModel)]="task.priority">
         <option value="High">High</option>
         <option value="Medium">Medium</option>
         <option value="Low">Low</option>
       </select>
+    </div>
+    <div class="container">
+    <h4> Edit Category: {{ task.category}}</h4>
+    <select class="input-lg" [(ngModel)]="task.category">
+      <option value="Home">Home</option>
+      <option value="Work">Work</option>
+      <option value="Hobby">Hobby</option>
+    </select>
     </div>
   `
 })

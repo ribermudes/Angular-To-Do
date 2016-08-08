@@ -8,6 +8,8 @@ import {Task} from './task.model';
 export class DonePipe implements PipeTransform {
   transform(input: Task[], args) {
     var desiredDoneState = args[0];
+    console.log("In Done Pipe");
+    console.log(args);
     if(desiredDoneState === "done") {
       return input.filter((task) => {
         return task.done;

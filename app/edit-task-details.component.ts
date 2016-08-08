@@ -6,8 +6,18 @@ import {Task} from './task.model';
   inputs: ['task'],
   template: `
     <br>
-    <h3> Edit Description: {{ task.description}}</h3>
-    <input [(ngModel)]="task.description" class="col-sm-8 input-lg task-form"/>
+    <div class="container">
+      <h3> Edit Description: {{ task.description}}</h3>
+      <input [(ngModel)]="task.description" class="col-sm-8 input-lg task-form"/>
+    </div>
+    <div class="container">
+      <h4> Edit Priority: {{ task.priority}}</h4>
+      <select [(ngModel)]="task.priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
   `
 })
 export class EditTaskDetailsComponent {

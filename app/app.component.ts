@@ -22,7 +22,7 @@ export class AppComponent {
     this.tasks = [
       new Task("Create To-Do List app.", 0, "High"),
       new Task("Learn Kung Fu.", 1, "High"),
-      new Task("Rewatch all the Lord of the Rings movies.", 2, "Normal"),
+      new Task("Rewatch all the Lord of the Rings movies.", 2, "Medium"),
       new Task("Do the laundry.", 3, "Low")
     ];
   }
